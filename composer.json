@@ -1,0 +1,25 @@
+{
+    "name": "serrexlab/rest-bundle",
+    "description": "REST API bunble for laravel",
+    "license": "MIT",
+    "keywords": ["laravel","rest-bunble"],
+    "authors": [
+        {
+            "name": "Sanath Samarasinghe",
+            "email": "sanath.s@outlook.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "illuminate/support": "5.1",
+        "illuminate/http": "5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Serrex\\RestBunble\\":"src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    }
+}
