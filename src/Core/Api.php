@@ -21,6 +21,10 @@ class Api
 
     private function getVersion()
     {
+        if (php_sapi_name() == "cli") {
+            return 1;
+        }
+
         $version = "";
         $header = \Request::header('Accept');
         $header = explode(";", $header);
